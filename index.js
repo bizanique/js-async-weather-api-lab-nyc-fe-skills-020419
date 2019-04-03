@@ -2,8 +2,12 @@ const API_KEY = "aec5e7f487c138f203e47fc0c39c3d49"
 
 function handleFormSubmit(event) {
   //handle submit event
+  // 1.grab the city they enterd in the text box
   event.preventDefault()
-  console.log("sup")
+  const input = document.getElementById('city')
+  const city = input.value
+  fetchCurrentWeather(city)
+  fetchFiveDayForecast(city)
 }
 
 function fetchCurrentWeather(city) {
