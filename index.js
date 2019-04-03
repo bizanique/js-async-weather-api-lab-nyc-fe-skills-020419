@@ -18,9 +18,10 @@ function fetchCurrentWeather(city) {
 }
 
 function displayCurrentWeather(json) {
+  const currentTemp=json.main.temp
   //render current weather data to the DOM using provided IDs and json from API
-  const currentTemp = json.main.temp
-  .innerHTML=
+  const tempContainer = document.getElementById('temp') tempContainer.innerHTML = currentTemp
+
 }
 
 
