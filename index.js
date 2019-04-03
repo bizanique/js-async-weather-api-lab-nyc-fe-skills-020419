@@ -24,7 +24,12 @@ function displayCurrentWeather(json) {
   tempContainer.innerHTML = currentTemp
   const low = document.getElementById ("low")
   const high = document.getElementById("high")
-  const humidity = document.g
+  const humidity = document.getElementById('humidity')
+  const cloudCover = document.getElementById('cloudCover')
+  low.innerHTML= json.main.temp_min
+  high.innerHTML= json.main.temp_max
+  humidity.innerHTML= json.main.temp.humidity
+  cloudCover.innerHTML+ jason.clouds.all
 }
 
 
