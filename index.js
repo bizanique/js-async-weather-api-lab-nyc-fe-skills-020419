@@ -12,7 +12,7 @@ function handleFormSubmit(event) {
 
 function fetchCurrentWeather(city) {
   //fetch current weather based on city
-  fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + API_KEY)
+  fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + API_KEY + "&units=imperial")
   .then( (data) => {return data.json()} ) 
   .then( (json) => {console.log(json)} )
 }
