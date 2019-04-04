@@ -53,7 +53,7 @@ function displayFiveDayForecast(json) {
     "<p>" + forecast.dt_text + "</p> </div> "
     startingString += divString
   }
-  const aside= document.getElementById('weather')
+  const aside= document.getElementById('Weather')
   aside.innerHTML=startingString
 }
 function createChart(json) {
