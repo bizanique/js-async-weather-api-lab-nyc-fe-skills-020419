@@ -44,7 +44,7 @@ function displayFiveDayForecast(json) {
   //render five day forecast data to the DOM using provided IDs and json from API
   console.log(json)
   const forecasts = json.list
-  createChart(json)
+  function createChart(json)
   
   let startingString =''
   for (let forecast of forecasts){
