@@ -47,7 +47,7 @@ function displayFiveDayForecast(json) {
   
   
   for (let forecast of forecasts){
-    let divString = "<div> <p></p> "
+    let divString = "<div> <p></p> <p></p> <p></p> "
   }
 }
 function createChart(json) {
